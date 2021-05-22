@@ -15,29 +15,30 @@ const templura = extend(Planet, "templura", Planets.sun, 3, 1.45, {
 templura.meshLoader = () => extend(HexMesh, templura, 6, {});
 
 const unfamilierHospitality = extend(SectorPreset, "unfamilier-hospitality", templura, 95, {
-    description: "Three friends lie untouched. Two abandoned. One native. Traped, within the compound. Relive their legacy.",
-    localizedName: "Unfamilier Hospitality",
+    description: "Three friends lie untouched. Two abandoned. One native. Trapped, within the compound. Relive their legacy.",
+    localizedName: "Unfamiliar Hospitality",
     difficulty: 0,
     alwaysUnlocked: true
 });
 
 const ancientGrotto = extend(SectorPreset, "ancient-grotto", templura, 6, {
     captureWave: 14,
-    description: "A grove full of rust. Collect rust and stone.",
+    description: "A grove full of rust. Collect the nearby rust and stone.",
     localizedName: "Ancient Grotto",
     difficulty: 1,
 });
 
 const loggery = extend(SectorPreset, "loggery", templura, 23, {
     captureWave: 26,
+    description: "A notoriously rigorously hard location , where lands are tight and  narrow pathways scatter the lands , the dirt seemingly quite damp and poor in nutrients for basic plantlife , yet , life still thrives here . Find a way to survive through the waves of deadly enemies and continue on your mission ."
     localizedName: "Loggery",
     difficulty: 3
 });
 
 const plantaeKindoma = extend(SectorPreset, "plantae-kindoma", templura, 72, {
     localizedName: "Plantae Kingdoma",
-    description: "A facility established by the crux is present here. Droughts had scared the lands, but water still remains. Dry riverbeds run through the facility, remenant of what had been. \nThere is an enemy base here. Collect sand. Build rusty alphae. Destroy the base.",
-    details: "An unknown force resides here, remains of something greater.",
+    description: "A facility established by the crux is present here. Droughts over many centuries have scarred the lands, but water still remains. Dry riverbeds run through the facility, remenant of what had been. \n[red]nThere is an enemy base here , so keep up your guard at all times . Collect sand. Build rusty alphas to destroy the base to it's utter foundation. Leave no survivors .",
+    details: "An unknown civilization of mysterious origin once resided here, indicating the remains of some other planetary nation are scattered on this planet , having possibly decayed into rust by the time we have found them .",
     difficulty: 4
 });
 
